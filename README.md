@@ -19,15 +19,15 @@ From the README.txt included in the source package:
         tar xvzf LS740_KK_kernel.tar.gz  
   - When you compile the kernel source code, you have to add google original prebuilt source(toolchain) into the android directory.
   - Run following scripts to build kernel
-    a)$cd kernel
+    1)$cd kernel
       $mkdir -p out
-    b)$export ARCH=arm
-    c)$export TARGET_PRODUCT=x5_spr_us
-    d)$export DTS_TARGET=msm8226-x5_spr_us
-    e)$export PATH=$PATH:tools/lz4demo
-    f)$export CROSS_COMPILE=$(pwd)/../prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-
-    g)$make O=./out ARCH=arm x5_spr_us_defconfig
-    h)$make O=./out -j4
+    2)$export ARCH=arm
+    3)$export TARGET_PRODUCT=x5_spr_us
+    4)$export DTS_TARGET=msm8226-x5_spr_us
+    5)$export PATH=$PATH:tools/lz4demo
+    6)$export CROSS_COMPILE=$(pwd)/../prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-
+    7)$make O=./out ARCH=arm x5_spr_us_defconfig
+    8)$make O=./out -j4
         * "-j4" : The number, 4, is the number of multiple jobs to be invoked simultaneously. 
         * lz4demo : lz4demo is included in kernel/tools/lz4demo(change mode for excuting, chmod 777 lz4demo).
     		More information can be found at "https://code.google.com/p/lz4/"
