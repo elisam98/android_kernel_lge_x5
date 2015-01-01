@@ -23,16 +23,26 @@ From the README.txt included in the source package:
     1) cd kernel
 
     2) mkdir -p out
+    
     3) export ARCH=arm
+    
     4) export TARGET_PRODUCT=x5_spr_us
+    
     5) export DTS_TARGET=msm8226-x5_spr_us
+    
     6) export PATH=$PATH:tools/lz4demo
+    
     7) export CROSS_COMPILE=$(pwd)/../prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-
+    
     8) make O=./out ARCH=arm x5_spr_us_defconfig
+    
     9) make O=./out -j4
-        * "-j4" : The number, 4, is the number of multiple jobs to be invoked simultaneously. 
-        * lz4demo : lz4demo is included in kernel/tools/lz4demo(change mode for excuting, chmod 777 lz4demo).
-    		More information can be found at "https://code.google.com/p/lz4/"
+    
+    * "-j4" : The number, 4, is the number of multiple jobs to be invoked simultaneously.
+    
+    * lz4demo : lz4demo is included in kernel/tools/lz4demo(change mode for excuting, chmod 777 lz4demo).
+        More information can be found at "https://code.google.com/p/lz4/"
+
   - After build, you can find the build image(zImage) at out/arch/arm/boot
 
 3. how  to build chromium_lge (vendor\lge\external\chromium_lge),
