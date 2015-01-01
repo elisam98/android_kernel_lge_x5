@@ -1,20 +1,29 @@
-android_kernel_lge_x5_zv5
+android_kernel_lge_x5
 =========================
 From the README.txt included in the source package:
 
 1. Android build
+-
   - Download original android source code ( kitkat 4.4.2 ) from http://source.android.com
   - Untar opensource packages of LS740_andoid_KK.tar.gz* into downloaded android source directory
+  
     a) cat LS740_andoid_KK.tar.gz* | tar -xzvf -
-  - And, merge the source into the android source code
+
+  And, merge the source into the android source code
+  
   - Run following scripts to build android
+   
     a) source build/envsetup.sh
+
     b) choosecombo 1 generic user
+    
     c) make -j4
+    
   - When you compile the android source code, you have to add google original prebuilt source(toolchain) into the android directory.
   - After build, you can find output at out/target/product/generic
 
-2. Kernel Build  
+2. Kernel Build 
+-
   - Uncompress using following command at the android directory
         tar xvzf LS740_KK_kernel.tar.gz  
   - When you compile the kernel source code, you have to add google original prebuilt source(toolchain) into the android directory.
