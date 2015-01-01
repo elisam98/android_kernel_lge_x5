@@ -54,5 +54,5 @@ From the README.txt included in the source package:
 
   - After build, you can find the build image(zImage) at out/arch/arm/boot
 
-3. how  to build chromium_lge (vendor\lge\external\chromium_lge),
+  - To build chromium_lge (vendor\lge\external\chromium_lge),
    please refer to Buildme.txt at the folder mentioned above.
